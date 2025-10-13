@@ -21,10 +21,14 @@ Este proyecto es una pre-entrega para una práctica de Node.js. Permite interact
    npm install
 ## Ejecutá el programa con los comandos correspondientes:
 
-- Obtener todos los productos: ```bash `node index.js GET products`
+- Obtener todos los productos:
+ ```bash `node index.js GET products`
 
-- Obtener un producto por ID:  ```bash `node index.js GET products/5`
+- Obtener un producto por ID:
+ ```bash `node index.js GET products/5`
 
-- Crear un producto:  ```bash `node index.js POST products "Camisa nueva" 29.99 "clothing"`
+- Crear un producto:
+ ```bash `node index.js POST products "Camisa nueva" 29.99 "clothing"`
 
-- Eliminar un producto:  ```bash `node index.js DELETE products/5`
+- Eliminar un producto:
+ ```bash `node index.js DELETE products/5`
