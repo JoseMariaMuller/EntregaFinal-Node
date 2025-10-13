@@ -15,8 +15,9 @@ Este proyecto es una pre-entrega para una práctica de Node.js. Permite interact
 
 ## ▶️ Cómo usar
 
-1. Instalá las dependencias (si tuvieras alguna en el futuro):
+1. Inicializa e instala dependencias (si tuvieras alguna en el futuro):
    ```bash
+   npm init -y
    npm install
 ## Ejecutá el programa con los comandos correspondientes:
 
