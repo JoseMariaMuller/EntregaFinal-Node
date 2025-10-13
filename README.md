@@ -26,10 +26,14 @@ Obtener todos los productos:
 node index.js GET products
 ```
 Obtener un producto por ID:
+```bash
 node index.js GET products/5
-
+```
 Crear un producto:
+```bash
 node index.js POST products "Camisa nueva" 29.99 "clothing"
-
+```
 Eliminar un producto:
+```bash
 node index.js DELETE products/5
+```
