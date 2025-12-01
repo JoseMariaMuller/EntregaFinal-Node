@@ -20,7 +20,6 @@ export const deleteProductService = async (id) => {
     new Promise(async (res, rej) => {
       try{
         await eliminarProducto(id)
-        console.log("despues de eliminar el producto")
         res()
       }catch(error){
         rej(error)
