@@ -1,39 +1,87 @@
-# Entrega Node.js - API Fakestore
+# 🚀 ENTREGA FINAL NODE — API REST con Firebase, JWT y Express
 
-Este proyecto es una pre-entrega para una práctica de Node.js. Permite interactuar con la [FakeStore API](https://fakestoreapi.com) desde la línea de comandos utilizando los métodos HTTP `GET`, `POST` y `DELETE`.
+API REST construida con **Node.js**, **Express**, **Firebase Firestore** y **JWT**, que permite manejar productos (CRUD) con rutas protegidas mediante autenticación.
 
-## 🚀 Funcionalidades
+🌐 URL de despliegue: [https://entrega-final-node-pink.vercel.app/](https://entrega-final-node-pink.vercel.app/)
 
-- Obtener todos los productos: `GET products`
-- Obtener un producto por ID: `GET products/<id>`
-- Crear un producto: `POST products <titulo> <precio> <categoria>`
-- Eliminar un producto: `DELETE products/<id>`
+---
 
-## 🧾 Requisitos
+## 📁 Estructura del proyecto
 
-- Node.js 18+ (el proyecto usa módulos ES, por eso en el `package.json` figura `"type": "module"`)
 
-## ▶️ Cómo usar
 
-1. Inicializa e instala dependencias (si tuvieras alguna en el futuro):
-   ```bash
-   npm init -y
-   npm install
-## Ejecutá el programa con los comandos correspondientes:
-
-Obtener todos los productos:
-```bash
-node index.js GET products
+ENTREGA-NODEJS/
 ```
-Obtener un producto por ID:
-```bash
-node index.js GET products/5
+├── src/
+│   ├── controllers/ 
+│   │   ├── products.controllers.js
+│   │   └── auth.controllers.js        
+│   ├── services/  
+│   │   ├── products.services.js          
+│   ├── models/  
+│   │   ├── products.models.js            
+│   ├── routes/ 
+│   │   ├── auth.routes.js     
+│   │   └── products.routes.js             
+│   ├── middleware/ 
+│   │   ├── authentication.js        
+│   └── data/ 
+│       ├── data.js    
+│       └── token.js  
+├── .env 
+├── package.json
+├── vercel.json 
+└── index.js 
+
+
 ```
-Crear un producto:
+
+## 🚀 Tecnologías utilizadas
+
+- Node.js  
+- JavaScript (ES)  
+- Express (framework web para Node.js) 
+- Firebase Firestore  
+- JWT (jsonwebtoken)  
+- CORS  
+- dotenv  
+- (Opcional) configuración para despliegue vía Vercel — por el archivo `vercel.json`
+
+
+## ⚙️ Variables de entorno (`.env`)
+
+Tu aplicación requiere estas claves:
+
 ```bash
-node index.js POST products "Camisa nueva" 29.99 "clothing"
+JWT_SECRET_KEY=xxxxxx
+
+FIREBASE_API_KEY=xxxxxx
+FIREBASE_AUTH_DOMAIN=xxxxxx
+FIREBASE_STORAGE_BUCKET=xxxxxx
+FIREBASE_APP_ID=xxxxxx
 ```
-Eliminar un producto:
+
+## 🛠 Instalación y ejecución local
+
+1. Clonar el repositorio:
+
 ```bash
-node index.js DELETE products/5
+git clone https://github.com/JoseMariaMuller/EntregaFinal-Node.git
+cd EntregaFinal-Node
 ```
+
+2. Instalar dependencias:
+```bash
+npm install
+```
+
+3. Ejecutar el servidor en modo desarrollo / local:
+```bash
+npm start
+```
+
+## 👨‍💻 Autor
+
+José María Müller
+— Entrega Final  Node.js
+2025
